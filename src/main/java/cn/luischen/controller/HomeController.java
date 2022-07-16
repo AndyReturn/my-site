@@ -422,7 +422,6 @@ public class HomeController extends BaseController{
         response.addCookie(cookie);
     }
 
-
     @ApiOperation("作品主页")
     @GetMapping(value = {"", "/index"})
     public String index(HttpServletRequest request, @RequestParam(value = "limit", defaultValue = "12") int limit) {
@@ -449,6 +448,11 @@ public class HomeController extends BaseController{
         return "site/index";
     }
 
+    @ApiOperation("董哥主页")
+    @GetMapping(value = {"/main"})
+    public String main(HttpServletRequest request, @RequestParam(value = "limit", defaultValue = "12") int limit) {
+        return "site/main";
+    }
 
     @ApiOperation("作品内容")
     @GetMapping(value = "/photo/article/{cid}")

@@ -2,25 +2,39 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
       th:fragment="header">
 <header role="header">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <div class="container">
+<!--            <title>无纸化会议系统,智能会议扩声解决方案,专业音视频解决方案提供商,专业音视频互联互通解决方案提供商,多媒体扩声解决方案,电教音响,音响,功放,话筒,2.4G话筒,分布式会议管理,远程视频会议,广州佳比亚电子科技有限公司</title>-->
+<!--            <meta name="keywords" content="无纸化会议系统,智能会议扩声解决方案,专业音视频解决方案提供商,专业音视频互联互通解决方案提供商,多媒体扩声解决方案,电教音响,音响,功放,话筒,2.4G话筒,分布式会议管理,远程视频会议">-->
+<!--            <meta name="description" content="广州佳比亚电子科技有限公司（以下简称佳比亚电子），隶属于佳比国际集团有限公司（以下简称佳比国际），拥有自主品牌“Jusbe（佳比）”，集研发、生产、销售及服务于一体；自2002年组建公司核心团队至今，发展至目前已拥有25家直属分支机构分布全国各地，是国内较具规模的音频专业化科技企业之一。产品线覆盖专业工程音响、数字影院音响、智能会议系统、数字化公共广播系统、多媒体教学扩声音响等。">-->
 
-        <!-- logo -->
 
-        <h1> <a th:href="@{/}" title="avana LLC"><img th:src="@{https://cdn.jsdelivr.net/gh/WinterChenS/imgrpo/blog/20210816112027.png}" style="width: 66px;" title="avana LLC" alt="avana LLC"/></a> </h1>
+<!--            <link href="@{/site/css/global.css}" rel="stylesheet" type="text/css">-->
+<!--            <link href="@{/site/css/layout.css}" rel="stylesheet" type="text/css">-->
+<!--            <link href="@{/site/css/index.css}" rel="stylesheet" type="text/css">-->
+<!--            <script type="text/javascript" src="@{/site/js/jquery.min.js}"></script>-->
+<!--            <script type="text/javascript"  src="@{/site/js/jquery.SuperSlide.2.1.3.source.js}"></script>-->
+<!--            <script type="text/javascript" src="@{/site/js/index.js}"></script>-->
 
-        <!-- logo -->
+        <title>无纸化会议系统,智能会议扩声解决方案,专业音视频解决方案提供商,专业音视频互联互通解决方案提供商,多媒体扩声解决方案,电教音响,音响,功放,话筒,2.4G话筒,分布式会议管理,远程视频会议,广州佳比亚电子科技有限公司</title>
+        <meta name="keywords" content="无纸化会议系统,智能会议扩声解决方案,专业音视频解决方案提供商,专业音视频互联互通解决方案提供商,多媒体扩声解决方案,电教音响,音响,功放,话筒,2.4G话筒,分布式会议管理,远程视频会议">
+        <meta name="description" content="广州佳比亚电子科技有限公司（以下简称佳比亚电子），隶属于佳比国际集团有限公司（以下简称佳比国际），拥有自主品牌“Jusbe（佳比）”，集研发、生产、销售及服务于一体；自2002年组建公司核心团队至今，发展至目前已拥有25家直属分支机构分布全国各地，是国内较具规模的音频专业化科技企业之一。产品线覆盖专业工程音响、数字影院音响、智能会议系统、数字化公共广播系统、多媒体教学扩声音响等。">
 
-        <!-- nav -->
 
-        <nav role="header-nav" class="navy">
-            <ul>
-                <li th:class="${active == 'work' ? 'nav-active':''}"><a th:href="@{/}" title="Work">Work</a></li>
-                <li th:class="${active == 'about' ? 'nav-active':''}"><a  th:href="@{/about}" title="About">About</a></li>
-                <li th:class="${active == 'blog' ? 'nav-active':''}"><a th:href="@{/blog/index}" title="Blog">Blog</a></li>
-            </ul>
-        </nav>
+        <link th:href="@{/site/main_files/global.css}" rel="stylesheet" type="text/css">
+        <link th:href="@{/site/main_files/layout.css}" rel="stylesheet" type="text/css">
+        <link th:href="@{/site/main_files/index.css}" rel="stylesheet" type="text/css">
+        <script type="text/javascript" th:src="@{/site/main_files/jquery.min.js}"></script>
+        <script th:src="@{/site/main_files/jquery.SuperSlide.2.1.source.js}"></script>
+        <script type="text/javascript" th:src="@{/site/main_files/index.js}"></script>
 
-        <!-- nav -->
+        <script th:src="@{/site/main_files/share.js}"></script>
+        <link rel="stylesheet" th:href="@{/site/main_files/share_style0_16.css}">
+
+
+
+<!--            <script src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=460543"></script>-->
+<!--            <link rel="stylesheet" href="http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=8105b07e.css">-->
 
     </div>
 </header>
