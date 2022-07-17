@@ -423,7 +423,7 @@ public class HomeController extends BaseController{
     }
 
     @ApiOperation("作品主页")
-    @GetMapping(value = {"", "/index"})
+    @GetMapping(value = { "/index1"})
     public String index(HttpServletRequest request, @RequestParam(value = "limit", defaultValue = "12") int limit) {
         return this.index(1, limit, request);
     }
@@ -445,13 +445,13 @@ public class HomeController extends BaseController{
         PageInfo<ContentDomain> articles = contentService.getArticlesByCond(contentCond, page, limit);
         request.setAttribute("archives", articles);
         request.setAttribute("active", "work");
-        return "site/index";
+        return "site/index1";
     }
 
     @ApiOperation("董哥主页")
-    @GetMapping(value = {"/main"})
+    @GetMapping(value = {"", "/index"})
     public String main(HttpServletRequest request, @RequestParam(value = "limit", defaultValue = "12") int limit) {
-        return "site/main";
+        return "site/index";
     }
 
     @ApiOperation("作品内容")
